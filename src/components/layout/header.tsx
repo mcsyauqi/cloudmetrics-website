@@ -22,25 +22,25 @@ import {
 } from "lucide-react";
 
 const features = [
-  { name: "Real-time Dashboards", href: "/features/dashboards", icon: BarChart3, description: "Live data visualization" },
-  { name: "AI Insights", href: "/features/ai-insights", icon: Sparkles, description: "Intelligent analytics" },
-  { name: "Custom Reports", href: "/features/reports", icon: LineChart, description: "Tailored reporting" },
-  { name: "Data Integrations", href: "/features/integrations", icon: Database, description: "100+ app connections" },
+  { name: "Dashboard Real-time", href: "/features/dashboards", icon: BarChart3, description: "Visualisasi data langsung" },
+  { name: "AI Insights", href: "/features/ai-insights", icon: Sparkles, description: "Analitik cerdas" },
+  { name: "Laporan Kustom", href: "/features/reports", icon: LineChart, description: "Pelaporan sesuai kebutuhan" },
+  { name: "Integrasi Data", href: "/features/integrations", icon: Database, description: "100+ koneksi aplikasi" },
 ];
 
 const solutions = [
-  { name: "Enterprise", href: "/solutions/enterprise", icon: Building2, description: "For large organizations" },
-  { name: "E-commerce", href: "/solutions/ecommerce", icon: ShoppingCart, description: "Online retail analytics" },
-  { name: "Healthcare", href: "/solutions/healthcare", icon: Stethoscope, description: "Medical data insights" },
-  { name: "Education", href: "/solutions/education", icon: GraduationCap, description: "Learning analytics" },
+  { name: "Enterprise", href: "/solutions/enterprise", icon: Building2, description: "Untuk organisasi besar" },
+  { name: "E-commerce", href: "/solutions/ecommerce", icon: ShoppingCart, description: "Analitik retail online" },
+  { name: "Kesehatan", href: "/solutions/healthcare", icon: Stethoscope, description: "Insight data medis" },
+  { name: "Pendidikan", href: "/solutions/education", icon: GraduationCap, description: "Analitik pembelajaran" },
 ];
 
 const navigation = [
-  { name: "Features", href: "/features", hasDropdown: true, items: features },
-  { name: "Solutions", href: "/solutions", hasDropdown: true, items: solutions },
-  { name: "Pricing", href: "/pricing", hasDropdown: false },
-  { name: "Customers", href: "/customers", hasDropdown: false },
-  { name: "Resources", href: "/resources", hasDropdown: false },
+  { name: "Fitur", href: "/features", hasDropdown: true, items: features },
+  { name: "Solusi", href: "/solutions", hasDropdown: true, items: solutions },
+  { name: "Harga", href: "/pricing", hasDropdown: false },
+  { name: "Pelanggan", href: "/customers", hasDropdown: false },
+  { name: "Sumber Daya", href: "/resources", hasDropdown: false },
 ];
 
 export function Header() {
@@ -142,12 +142,12 @@ export function Header() {
           <div className="hidden lg:flex lg:items-center lg:gap-x-4">
             <Link href="/demo">
               <Button variant="ghost" size="sm">
-                Book Demo
+                Jadwalkan Demo
               </Button>
             </Link>
             <Link href="/signup">
               <Button size="sm">
-                Start Free Trial
+                Coba Gratis
                 <Zap className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -160,7 +160,7 @@ export function Header() {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-700"
               onClick={() => setMobileMenuOpen(true)}
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">Buka menu</span>
               <Menu className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
@@ -197,7 +197,7 @@ export function Header() {
                   className="-m-2.5 rounded-md p-2.5 text-slate-700"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  <span className="sr-only">Close menu</span>
+                  <span className="sr-only">Tutup menu</span>
                   <X className="h-6 w-6" aria-hidden="true" />
                 </button>
               </div>
@@ -218,12 +218,12 @@ export function Header() {
                   <div className="py-6 space-y-3">
                     <Link href="/demo" onClick={() => setMobileMenuOpen(false)}>
                       <Button variant="outline" className="w-full">
-                        Book Demo
+                        Jadwalkan Demo
                       </Button>
                     </Link>
                     <Link href="/signup" onClick={() => setMobileMenuOpen(false)}>
                       <Button className="w-full">
-                        Start Free Trial
+                        Coba Gratis
                         <Zap className="ml-2 h-4 w-4" />
                       </Button>
                     </Link>

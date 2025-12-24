@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, CheckCircle } from "lucide-react";
 
 const benefits = [
-  "14-day free trial",
-  "No credit card required",
-  "Cancel anytime",
-  "24/7 support",
+  "14 hari uji coba gratis",
+  "Tanpa kartu kredit",
+  "Batalkan kapan saja",
+  "Support 24/7",
 ];
 
 export function CTA() {
@@ -40,20 +40,20 @@ export function CTA() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm mb-8"
           >
             <Zap className="h-4 w-4 text-yellow-400" />
-            <span>Start analyzing in minutes</span>
+            <span>Mulai analisis dalam hitungan menit</span>
           </motion.div>
 
           {/* Headline */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white max-w-3xl mx-auto">
-            Ready to turn your data into{" "}
+            Siap mengubah data Anda menjadi{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-violet-400 to-purple-400">
-              competitive advantage?
+              keunggulan kompetitif?
             </span>
           </h2>
 
           <p className="mt-6 text-lg text-slate-300 max-w-2xl mx-auto">
-            Join 1,000+ companies using CloudMetrics to make smarter decisions.
-            Set up in minutes, not months.
+            Bergabung dengan 1.000+ perusahaan yang menggunakan CloudMetrics untuk keputusan lebih cerdas.
+            Setup dalam menit, bukan bulan.
           </p>
 
           {/* CTAs */}
@@ -66,13 +66,13 @@ export function CTA() {
           >
             <Link href="/signup">
               <Button size="xl" className="w-full sm:w-auto bg-white text-slate-900 hover:bg-slate-100">
-                Start Free Trial
+                Mulai Uji Coba Gratis
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link href="/demo">
               <Button size="xl" variant="outline" className="w-full sm:w-auto border-white/30 text-white hover:bg-white/10">
-                Talk to Sales
+                Hubungi Sales
               </Button>
             </Link>
           </motion.div>

@@ -24,29 +24,29 @@ import {
 const quickLinks = [
   {
     icon: Rocket,
-    title: "Getting Started",
-    description: "Set up CloudMetrics in minutes",
+    title: "Memulai",
+    description: "Setup CloudMetrics dalam menit",
     href: "/docs/getting-started",
     color: "from-blue-500 to-blue-600",
   },
   {
     icon: Database,
-    title: "Data Sources",
-    description: "Connect your databases and APIs",
+    title: "Sumber Data",
+    description: "Hubungkan database dan API Anda",
     href: "/docs/data-sources",
     color: "from-emerald-500 to-emerald-600",
   },
   {
     icon: BarChart3,
-    title: "Dashboards",
-    description: "Create and customize dashboards",
+    title: "Dashboard",
+    description: "Buat dan kustomisasi dashboard",
     href: "/docs/dashboards",
     color: "from-violet-500 to-violet-600",
   },
   {
     icon: Plug,
-    title: "Integrations",
-    description: "Connect with your tools",
+    title: "Integrasi",
+    description: "Hubungkan dengan tools Anda",
     href: "/docs/integrations",
     color: "from-orange-500 to-orange-600",
   },
@@ -54,32 +54,32 @@ const quickLinks = [
 
 const sections = [
   {
-    title: "Platform Basics",
+    title: "Dasar Platform",
     icon: BookOpen,
     links: [
-      { title: "Introduction", href: "/docs/introduction" },
-      { title: "Core Concepts", href: "/docs/concepts" },
-      { title: "Account Setup", href: "/docs/account-setup" },
-      { title: "Team Management", href: "/docs/team-management" },
+      { title: "Pengenalan", href: "/docs/introduction" },
+      { title: "Konsep Inti", href: "/docs/concepts" },
+      { title: "Setup Akun", href: "/docs/account-setup" },
+      { title: "Manajemen Tim", href: "/docs/team-management" },
     ],
   },
   {
-    title: "Data & Metrics",
+    title: "Data & Metrik",
     icon: Database,
     links: [
-      { title: "Data Sources", href: "/docs/data-sources" },
-      { title: "Metrics & KPIs", href: "/docs/metrics" },
-      { title: "Custom Fields", href: "/docs/custom-fields" },
-      { title: "Data Transformations", href: "/docs/transformations" },
+      { title: "Sumber Data", href: "/docs/data-sources" },
+      { title: "Metrik & KPI", href: "/docs/metrics" },
+      { title: "Field Kustom", href: "/docs/custom-fields" },
+      { title: "Transformasi Data", href: "/docs/transformations" },
     ],
   },
   {
-    title: "Visualizations",
+    title: "Visualisasi",
     icon: BarChart3,
     links: [
       { title: "Dashboard Builder", href: "/docs/dashboard-builder" },
-      { title: "Chart Types", href: "/docs/chart-types" },
-      { title: "Filters & Controls", href: "/docs/filters" },
+      { title: "Jenis Chart", href: "/docs/chart-types" },
+      { title: "Filter & Kontrol", href: "/docs/filters" },
       { title: "Sharing & Embedding", href: "/docs/sharing" },
     ],
   },
@@ -89,28 +89,28 @@ const sections = [
     links: [
       { title: "REST API", href: "/docs/api" },
       { title: "Webhooks", href: "/docs/webhooks" },
-      { title: "SDKs", href: "/docs/sdks" },
-      { title: "Authentication", href: "/docs/authentication" },
+      { title: "SDK", href: "/docs/sdks" },
+      { title: "Autentikasi", href: "/docs/authentication" },
     ],
   },
   {
-    title: "Security",
+    title: "Keamanan",
     icon: Shield,
     links: [
-      { title: "Overview", href: "/docs/security" },
+      { title: "Gambaran Umum", href: "/docs/security" },
       { title: "SSO/SAML", href: "/docs/sso" },
       { title: "Permissions", href: "/docs/permissions" },
-      { title: "Compliance", href: "/docs/compliance" },
+      { title: "Kepatuhan", href: "/docs/compliance" },
     ],
   },
   {
-    title: "Help & Support",
+    title: "Bantuan & Support",
     icon: HelpCircle,
     links: [
       { title: "FAQ", href: "/docs/faq" },
       { title: "Troubleshooting", href: "/docs/troubleshooting" },
-      { title: "Contact Support", href: "/support" },
-      { title: "Status Page", href: "/status" },
+      { title: "Hubungi Support", href: "/support" },
+      { title: "Halaman Status", href: "/status" },
     ],
   },
 ];
@@ -129,14 +129,14 @@ export default function DocsPage() {
           >
             <Badge variant="secondary" className="mb-6">
               <BookOpen className="mr-1 h-3 w-3" />
-              Documentation
+              Dokumentasi
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900">
-              Learn{" "}
+              Pelajari{" "}
               <span className="gradient-text">CloudMetrics</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-slate-600">
-              Everything you need to build powerful analytics dashboards and make data-driven decisions.
+              Semua yang Anda butuhkan untuk membangun dashboard analitik powerful dan membuat keputusan berbasis data.
             </p>
 
             {/* Search */}
@@ -144,7 +144,7 @@ export default function DocsPage() {
               <div className="relative">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400" />
                 <Input
-                  placeholder="Search documentation..."
+                  placeholder="Cari dokumentasi..."
                   className="pl-12 h-14 text-lg"
                 />
               </div>
@@ -176,7 +176,7 @@ export default function DocsPage() {
                       </h3>
                       <p className="text-sm text-slate-600">{link.description}</p>
                       <div className="mt-4 flex items-center text-sm font-medium text-primary">
-                        Get started
+                        Mulai
                         <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </CardContent>
@@ -198,7 +198,7 @@ export default function DocsPage() {
             transition={{ duration: 0.5 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900">Browse by category</h2>
+            <h2 className="text-2xl font-bold text-slate-900">Jelajahi berdasarkan kategori</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -252,21 +252,21 @@ export default function DocsPage() {
                 Developer API
               </Badge>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Build with our API
+                Bangun dengan API kami
               </h2>
               <p className="text-lg text-slate-300 mb-6">
-                Access your data programmatically with our REST API. Build custom integrations, automate workflows, and extend CloudMetrics.
+                Akses data Anda secara programatis dengan REST API kami. Bangun integrasi kustom, otomatisasi workflow, dan extend CloudMetrics.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/docs/api">
                   <Button className="bg-white text-slate-900 hover:bg-slate-100">
-                    API Reference
+                    Referensi API
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
                 <Link href="/docs/sdks">
                   <Button variant="outline" className="border-slate-600 text-white hover:bg-slate-800">
-                    View SDKs
+                    Lihat SDK
                   </Button>
                 </Link>
               </div>
@@ -297,16 +297,16 @@ export default function DocsPage() {
                 <Users className="h-8 w-8 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-slate-900">Need help?</h3>
-                <p className="text-slate-600">Our support team is available 24/7.</p>
+                <h3 className="text-xl font-semibold text-slate-900">Butuh bantuan?</h3>
+                <p className="text-slate-600">Tim support kami tersedia 24/7.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <Link href="/support">
-                <Button variant="outline">Contact Support</Button>
+                <Button variant="outline">Hubungi Support</Button>
               </Link>
               <Link href="/docs/faq">
-                <Button>View FAQ</Button>
+                <Button>Lihat FAQ</Button>
               </Link>
             </div>
           </motion.div>

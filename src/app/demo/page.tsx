@@ -22,28 +22,28 @@ import {
 const benefits = [
   {
     icon: Clock,
-    title: "30-minute session",
-    description: "Quick, focused demo tailored to your needs",
+    title: "Sesi 30 menit",
+    description: "Demo singkat dan fokus sesuai kebutuhan Anda",
   },
   {
     icon: Users,
-    title: "Expert-led",
-    description: "Learn from our solutions engineers",
+    title: "Dipandu ahli",
+    description: "Belajar dari solutions engineer kami",
   },
   {
     icon: Sparkles,
-    title: "Custom demo",
-    description: "See features relevant to your use case",
+    title: "Demo kustom",
+    description: "Lihat fitur relevan untuk use case Anda",
   },
   {
     icon: Shield,
-    title: "No commitment",
-    description: "Just a conversation about your needs",
+    title: "Tanpa komitmen",
+    description: "Hanya percakapan tentang kebutuhan Anda",
   },
 ];
 
 const testimonial = {
-  quote: "The demo was incredibly helpful. They understood our needs and showed us exactly how CloudMetrics could solve our challenges.",
+  quote: "Demo-nya sangat membantu. Mereka memahami kebutuhan kami dan menunjukkan persis bagaimana CloudMetrics bisa menyelesaikan tantangan kami.",
   author: "Michael Chen",
   role: "Director of Analytics",
   company: "TechForward Inc",
@@ -80,14 +80,14 @@ export default function DemoPage() {
             >
               <Badge variant="secondary" className="mb-6">
                 <Calendar className="mr-1 h-3 w-3" />
-                Book a Demo
+                Jadwalkan Demo
               </Badge>
               <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
-                See CloudMetrics{" "}
-                <span className="gradient-text">in action</span>
+                Lihat CloudMetrics{" "}
+                <span className="gradient-text">beraksi</span>
               </h1>
               <p className="text-lg text-slate-600 mb-8">
-                Get a personalized walkthrough of our platform. Our team will show you how CloudMetrics can help you turn data into actionable insights.
+                Dapatkan walkthrough personal dari platform kami. Tim kami akan menunjukkan bagaimana CloudMetrics dapat membantu mengubah data menjadi insight yang actionable.
               </p>
 
               {/* Benefits */}
@@ -135,13 +135,13 @@ export default function DemoPage() {
               <Card className="shadow-xl">
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold text-slate-900 mb-6">
-                    Request your demo
+                    Minta demo Anda
                   </h2>
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-sm font-medium text-slate-700 mb-1">
-                          First name *
+                          Nama depan *
                         </label>
                         <Input
                           required
@@ -152,7 +152,7 @@ export default function DemoPage() {
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-slate-700 mb-1">
-                          Last name *
+                          Nama belakang *
                         </label>
                         <Input
                           required
@@ -165,7 +165,7 @@ export default function DemoPage() {
 
                     <div>
                       <label className="block text-sm font-medium text-slate-700 mb-1">
-                        Work email *
+                        Email kantor *
                       </label>
                       <Input
                         type="email"
@@ -178,7 +178,7 @@ export default function DemoPage() {
 
                     <div>
                       <label className="block text-sm font-medium text-slate-700 mb-1">
-                        Company name *
+                        Nama perusahaan *
                       </label>
                       <Input
                         required
@@ -190,7 +190,7 @@ export default function DemoPage() {
 
                     <div>
                       <label className="block text-sm font-medium text-slate-700 mb-1">
-                        Job title *
+                        Jabatan *
                       </label>
                       <Input
                         required
@@ -202,7 +202,7 @@ export default function DemoPage() {
 
                     <div>
                       <label className="block text-sm font-medium text-slate-700 mb-1">
-                        Company size *
+                        Ukuran perusahaan *
                       </label>
                       <select
                         required
@@ -210,38 +210,38 @@ export default function DemoPage() {
                         onChange={(e) => setFormState({ ...formState, employees: e.target.value })}
                         className="flex h-11 w-full rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:border-primary"
                       >
-                        <option value="">Select company size</option>
-                        <option value="1-10">1-10 employees</option>
-                        <option value="11-50">11-50 employees</option>
-                        <option value="51-200">51-200 employees</option>
-                        <option value="201-500">201-500 employees</option>
-                        <option value="501-1000">501-1,000 employees</option>
-                        <option value="1000+">1,000+ employees</option>
+                        <option value="">Pilih ukuran perusahaan</option>
+                        <option value="1-10">1-10 karyawan</option>
+                        <option value="11-50">11-50 karyawan</option>
+                        <option value="51-200">51-200 karyawan</option>
+                        <option value="201-500">201-500 karyawan</option>
+                        <option value="501-1000">501-1.000 karyawan</option>
+                        <option value="1000+">1.000+ karyawan</option>
                       </select>
                     </div>
 
                     <div>
                       <label className="block text-sm font-medium text-slate-700 mb-1">
-                        What would you like to learn about?
+                        Apa yang ingin Anda pelajari?
                       </label>
                       <textarea
                         value={formState.message}
                         onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                        placeholder="Tell us about your analytics challenges..."
+                        placeholder="Ceritakan tentang tantangan analitik Anda..."
                         rows={3}
                         className="flex w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm shadow-sm transition-colors placeholder:text-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:border-primary resize-none"
                       />
                     </div>
 
                     <Button type="submit" size="lg" className="w-full">
-                      Request Demo
+                      Minta Demo
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
 
                     <p className="text-xs text-slate-500 text-center">
-                      By submitting this form, you agree to our{" "}
+                      Dengan mengirim formulir ini, Anda menyetujui{" "}
                       <Link href="/privacy" className="text-primary hover:underline">
-                        Privacy Policy
+                        Kebijakan Privasi
                       </Link>
                       .
                     </p>
@@ -264,10 +264,10 @@ export default function DemoPage() {
             className="text-center max-w-2xl mx-auto mb-12"
           >
             <h2 className="text-3xl font-bold text-slate-900 mb-4">
-              What to expect
+              Apa yang diharapkan
             </h2>
             <p className="text-lg text-slate-600">
-              Our demos are designed to be helpful, not salesy.
+              Demo kami dirancang untuk membantu, bukan menjual.
             </p>
           </motion.div>
 
@@ -275,18 +275,18 @@ export default function DemoPage() {
             {[
               {
                 step: "1",
-                title: "Discovery",
-                description: "We'll learn about your current analytics setup, challenges, and goals.",
+                title: "Penemuan",
+                description: "Kami akan mempelajari setup analitik Anda saat ini, tantangan, dan tujuan.",
               },
               {
                 step: "2",
-                title: "Personalized Demo",
-                description: "See how CloudMetrics solves your specific use cases with relevant examples.",
+                title: "Demo Personal",
+                description: "Lihat bagaimana CloudMetrics menyelesaikan use case spesifik Anda dengan contoh relevan.",
               },
               {
                 step: "3",
-                title: "Q&A & Next Steps",
-                description: "Get your questions answered and discuss how to get started.",
+                title: "Tanya Jawab & Langkah Selanjutnya",
+                description: "Dapatkan jawaban atas pertanyaan Anda dan diskusikan cara memulai.",
               },
             ].map((item, index) => (
               <motion.div
@@ -323,13 +323,13 @@ export default function DemoPage() {
                 <Play className="h-8 w-8 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-slate-900">Prefer to explore on your own?</h3>
-                <p className="text-slate-600">Start a free trial and see CloudMetrics in action.</p>
+                <h3 className="text-xl font-semibold text-slate-900">Lebih suka menjelajah sendiri?</h3>
+                <p className="text-slate-600">Mulai uji coba gratis dan lihat CloudMetrics beraksi.</p>
               </div>
             </div>
             <Link href="/signup">
               <Button size="lg">
-                Start Free Trial
+                Mulai Uji Coba Gratis
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>

@@ -19,93 +19,93 @@ import { cn } from "@/lib/utils";
 const plans = [
   {
     name: "Starter",
-    description: "Perfect for small teams getting started with analytics",
+    description: "Sempurna untuk tim kecil yang baru memulai analitik",
     price: "$49",
-    period: "/month",
+    period: "/bulan",
     popular: false,
-    cta: "Start Free Trial",
+    cta: "Mulai Uji Coba Gratis",
     href: "/signup?plan=starter",
     features: [
-      { name: "Up to 5 team members", included: true },
-      { name: "10 dashboards", included: true },
-      { name: "1M events/month", included: true },
-      { name: "7-day data retention", included: true },
-      { name: "Standard integrations", included: true },
-      { name: "Email support", included: true },
+      { name: "Hingga 5 anggota tim", included: true },
+      { name: "10 dashboard", included: true },
+      { name: "1 juta event/bulan", included: true },
+      { name: "Retensi data 7 hari", included: true },
+      { name: "Integrasi standar", included: true },
+      { name: "Support email", included: true },
       { name: "AI insights", included: false },
-      { name: "Custom reports", included: false },
+      { name: "Laporan kustom", included: false },
       { name: "SSO/SAML", included: false },
-      { name: "Dedicated support", included: false },
+      { name: "Support dedicated", included: false },
     ],
   },
   {
     name: "Pro",
-    description: "For growing teams that need more power and flexibility",
+    description: "Untuk tim berkembang yang butuh lebih banyak kekuatan dan fleksibilitas",
     price: "$149",
-    period: "/month",
+    period: "/bulan",
     popular: true,
-    cta: "Start Free Trial",
+    cta: "Mulai Uji Coba Gratis",
     href: "/signup?plan=pro",
     features: [
-      { name: "Up to 20 team members", included: true },
-      { name: "Unlimited dashboards", included: true },
-      { name: "10M events/month", included: true },
-      { name: "1-year data retention", included: true },
-      { name: "All integrations", included: true },
-      { name: "Priority email support", included: true },
+      { name: "Hingga 20 anggota tim", included: true },
+      { name: "Dashboard unlimited", included: true },
+      { name: "10 juta event/bulan", included: true },
+      { name: "Retensi data 1 tahun", included: true },
+      { name: "Semua integrasi", included: true },
+      { name: "Support email prioritas", included: true },
       { name: "AI insights", included: true },
-      { name: "Custom reports", included: true },
+      { name: "Laporan kustom", included: true },
       { name: "SSO/SAML", included: false },
-      { name: "Dedicated support", included: false },
+      { name: "Support dedicated", included: false },
     ],
   },
   {
     name: "Enterprise",
-    description: "For large organizations with advanced security needs",
-    price: "Custom",
+    description: "Untuk organisasi besar dengan kebutuhan keamanan tingkat lanjut",
+    price: "Kustom",
     period: "",
     popular: false,
-    cta: "Contact Sales",
+    cta: "Hubungi Sales",
     href: "/demo",
     features: [
-      { name: "Unlimited team members", included: true },
-      { name: "Unlimited dashboards", included: true },
-      { name: "Unlimited events", included: true },
-      { name: "Unlimited data retention", included: true },
-      { name: "All integrations + custom", included: true },
-      { name: "24/7 phone support", included: true },
-      { name: "Advanced AI insights", included: true },
-      { name: "White-label reports", included: true },
+      { name: "Anggota tim unlimited", included: true },
+      { name: "Dashboard unlimited", included: true },
+      { name: "Event unlimited", included: true },
+      { name: "Retensi data unlimited", included: true },
+      { name: "Semua integrasi + kustom", included: true },
+      { name: "Support telepon 24/7", included: true },
+      { name: "AI insights advanced", included: true },
+      { name: "Laporan white-label", included: true },
       { name: "SSO/SAML", included: true },
-      { name: "Dedicated success manager", included: true },
+      { name: "Success manager dedicated", included: true },
     ],
   },
 ];
 
 const faqs = [
   {
-    question: "Can I change plans at any time?",
-    answer: "Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate your billing.",
+    question: "Bisakah saya mengubah paket kapan saja?",
+    answer: "Ya, Anda bisa upgrade atau downgrade paket kapan saja. Perubahan berlaku langsung, dan kami akan prorate tagihan Anda.",
   },
   {
-    question: "What happens if I exceed my event limit?",
-    answer: "We'll notify you when you're approaching your limit. You can upgrade your plan or purchase additional events as needed.",
+    question: "Apa yang terjadi jika melebihi limit event?",
+    answer: "Kami akan memberitahu saat Anda mendekati limit. Anda bisa upgrade paket atau membeli event tambahan sesuai kebutuhan.",
   },
   {
-    question: "Is there a free trial?",
-    answer: "Yes! All plans come with a 14-day free trial. No credit card required to start.",
+    question: "Apakah ada uji coba gratis?",
+    answer: "Ya! Semua paket dilengkapi uji coba gratis 14 hari. Tidak perlu kartu kredit untuk memulai.",
   },
   {
-    question: "What payment methods do you accept?",
-    answer: "We accept all major credit cards, ACH transfers, and invoicing for annual Enterprise plans.",
+    question: "Metode pembayaran apa yang diterima?",
+    answer: "Kami menerima semua kartu kredit utama, transfer ACH, dan invoice untuk paket Enterprise tahunan.",
   },
   {
-    question: "Do you offer discounts for annual billing?",
-    answer: "Yes, you save 20% when you choose annual billing on any plan.",
+    question: "Apakah ada diskon untuk tagihan tahunan?",
+    answer: "Ya, Anda hemat 20% jika memilih tagihan tahunan di paket mana pun.",
   },
   {
-    question: "What's your refund policy?",
-    answer: "We offer a 30-day money-back guarantee. If you're not satisfied, contact us for a full refund.",
+    question: "Bagaimana kebijakan refund?",
+    answer: "Kami menawarkan garansi uang kembali 30 hari. Jika tidak puas, hubungi kami untuk refund penuh.",
   },
 ];
 
@@ -123,14 +123,14 @@ export default function PricingPage() {
           >
             <Badge variant="secondary" className="mb-6">
               <Zap className="mr-1 h-3 w-3" />
-              Simple Pricing
+              Harga Simpel
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900">
-              Plans that{" "}
-              <span className="gradient-text">scale with you</span>
+              Paket yang{" "}
+              <span className="gradient-text">berkembang bersama Anda</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-slate-600">
-              Start free. Upgrade when you need more. No hidden fees, no surprises.
+              Mulai gratis. Upgrade saat butuh lebih. Tanpa biaya tersembunyi, tanpa kejutan.
             </p>
           </motion.div>
         </div>
@@ -156,7 +156,7 @@ export default function PricingPage() {
                     <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                       <Badge className="bg-primary text-white shadow-lg">
                         <Sparkles className="mr-1 h-3 w-3" />
-                        Most Popular
+                        Paling Populer
                       </Badge>
                     </div>
                   )}
@@ -213,7 +213,7 @@ export default function PricingPage() {
             className="mt-12 text-center"
           >
             <p className="text-slate-600">
-              <span className="font-semibold text-primary">Save 20%</span> with annual billing
+              <span className="font-semibold text-primary">Hemat 20%</span> dengan tagihan tahunan
             </p>
           </motion.div>
         </div>
@@ -231,14 +231,14 @@ export default function PricingPage() {
           >
             <Building2 className="h-12 w-12 text-primary mx-auto mb-6" />
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-              Need a custom solution?
+              Butuh solusi kustom?
             </h2>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto mb-8">
-              Get a tailored plan with custom integrations, dedicated support, and enterprise-grade security.
+              Dapatkan paket yang disesuaikan dengan integrasi kustom, support dedicated, dan keamanan enterprise.
             </p>
             <Link href="/demo">
               <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100">
-                Contact Sales
+                Hubungi Sales
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -258,7 +258,7 @@ export default function PricingPage() {
           >
             <HelpCircle className="h-10 w-10 text-primary mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-slate-900">
-              Frequently asked questions
+              Pertanyaan yang sering diajukan
             </h2>
           </motion.div>
 
@@ -290,9 +290,9 @@ export default function PricingPage() {
             className="mt-12 text-center"
           >
             <p className="text-slate-600">
-              Still have questions?{" "}
+              Masih punya pertanyaan?{" "}
               <Link href="/contact" className="text-primary font-medium hover:underline">
-                Contact our team
+                Hubungi tim kami
               </Link>
             </p>
           </motion.div>

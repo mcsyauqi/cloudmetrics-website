@@ -44,19 +44,19 @@ import {
 
 // Section 1: Hero data
 const heroStats = [
-  { value: "150+", label: "Integrations" },
-  { value: "5 min", label: "Average Setup" },
-  { value: "Real-time", label: "Data Sync" },
+  { value: "150+", label: "Integrasi" },
+  { value: "5 menit", label: "Rata-rata Setup" },
+  { value: "Real-time", label: "Sync Data" },
   { value: "99.9%", label: "Uptime" },
 ];
 
 // Section 2: Categories
 const categories = [
-  { icon: Database, name: "Databases", count: 25, color: "from-blue-500 to-blue-600", description: "PostgreSQL, MySQL, MongoDB, and more" },
+  { icon: Database, name: "Database", count: 25, color: "from-blue-500 to-blue-600", description: "PostgreSQL, MySQL, MongoDB, dan lainnya" },
   { icon: ShoppingCart, name: "E-commerce", count: 18, color: "from-emerald-500 to-emerald-600", description: "Shopify, WooCommerce, Magento" },
-  { icon: CreditCard, name: "Payments", count: 15, color: "from-violet-500 to-violet-600", description: "Stripe, PayPal, Square" },
-  { icon: BarChart3, name: "Analytics", count: 20, color: "from-orange-500 to-orange-600", description: "Google Analytics, Mixpanel, Amplitude" },
-  { icon: MessageSquare, name: "Communication", count: 12, color: "from-pink-500 to-pink-600", description: "Slack, Discord, Microsoft Teams" },
+  { icon: CreditCard, name: "Pembayaran", count: 15, color: "from-violet-500 to-violet-600", description: "Stripe, PayPal, Square" },
+  { icon: BarChart3, name: "Analitik", count: 20, color: "from-orange-500 to-orange-600", description: "Google Analytics, Mixpanel, Amplitude" },
+  { icon: MessageSquare, name: "Komunikasi", count: 12, color: "from-pink-500 to-pink-600", description: "Slack, Discord, Microsoft Teams" },
   { icon: Mail, name: "Marketing", count: 22, color: "from-cyan-500 to-cyan-600", description: "HubSpot, Mailchimp, Marketo" },
   { icon: Cloud, name: "Cloud Storage", count: 10, color: "from-indigo-500 to-indigo-600", description: "AWS S3, Google Cloud, Azure" },
   { icon: Code, name: "Developer Tools", count: 28, color: "from-slate-500 to-slate-600", description: "GitHub, GitLab, Jira" },
@@ -64,14 +64,14 @@ const categories = [
 
 // Section 3: Featured Integrations
 const featuredIntegrations = [
-  { name: "Salesforce", category: "CRM", logo: "SF", description: "Sync customer data, opportunities, and sales metrics in real-time", popular: true },
-  { name: "Stripe", category: "Payments", logo: "ST", description: "Track revenue, subscriptions, and payment analytics", popular: true },
-  { name: "HubSpot", category: "Marketing", logo: "HS", description: "Connect marketing campaigns, leads, and customer journey data", popular: true },
-  { name: "Shopify", category: "E-commerce", logo: "SH", description: "Monitor sales, inventory, and customer behavior", popular: true },
-  { name: "PostgreSQL", category: "Database", logo: "PG", description: "Direct connection to your PostgreSQL databases", popular: false },
-  { name: "Snowflake", category: "Data Warehouse", logo: "SN", description: "Query and visualize your Snowflake data", popular: true },
-  { name: "Google Analytics", category: "Analytics", logo: "GA", description: "Import web analytics and user behavior data", popular: false },
-  { name: "Slack", category: "Communication", logo: "SL", description: "Send alerts and reports directly to Slack channels", popular: false },
+  { name: "Salesforce", category: "CRM", logo: "SF", description: "Sync data pelanggan, peluang, dan metrik penjualan secara real-time", popular: true },
+  { name: "Stripe", category: "Pembayaran", logo: "ST", description: "Lacak revenue, langganan, dan analitik pembayaran", popular: true },
+  { name: "HubSpot", category: "Marketing", logo: "HS", description: "Hubungkan kampanye marketing, leads, dan data customer journey", popular: true },
+  { name: "Shopify", category: "E-commerce", logo: "SH", description: "Monitor penjualan, inventori, dan perilaku pelanggan", popular: true },
+  { name: "PostgreSQL", category: "Database", logo: "PG", description: "Koneksi langsung ke database PostgreSQL Anda", popular: false },
+  { name: "Snowflake", category: "Data Warehouse", logo: "SN", description: "Query dan visualisasikan data Snowflake Anda", popular: true },
+  { name: "Google Analytics", category: "Analitik", logo: "GA", description: "Import analitik web dan data perilaku pengguna", popular: false },
+  { name: "Slack", category: "Komunikasi", logo: "SL", description: "Kirim alert dan laporan langsung ke channel Slack", popular: false },
 ];
 
 // Section 4: All Integrations Directory
@@ -136,58 +136,58 @@ const allIntegrations = [
 
 // Section 5: How it works steps
 const setupSteps = [
-  { step: "01", title: "Choose Your Integration", description: "Browse our directory of 150+ pre-built connectors and select the tools you want to connect.", icon: Search },
-  { step: "02", title: "Authenticate Securely", description: "Use OAuth 2.0 or API keys to securely connect your accounts. Your credentials are encrypted.", icon: Lock },
-  { step: "03", title: "Configure Data Sync", description: "Select which data to sync, set refresh intervals, and map fields to your metrics.", icon: RefreshCw },
-  { step: "04", title: "Start Analyzing", description: "Your data flows automatically into CloudMetrics. Build dashboards and get insights instantly.", icon: BarChart3 },
+  { step: "01", title: "Pilih Integrasi Anda", description: "Jelajahi direktori 150+ konektor pre-built dan pilih tools yang ingin dihubungkan.", icon: Search },
+  { step: "02", title: "Autentikasi dengan Aman", description: "Gunakan OAuth 2.0 atau API keys untuk menghubungkan akun dengan aman. Kredensial Anda terenkripsi.", icon: Lock },
+  { step: "03", title: "Konfigurasi Sync Data", description: "Pilih data mana yang akan di-sync, atur interval refresh, dan mapping field ke metrik Anda.", icon: RefreshCw },
+  { step: "04", title: "Mulai Menganalisis", description: "Data Anda mengalir otomatis ke CloudMetrics. Bangun dashboard dan dapatkan insight langsung.", icon: BarChart3 },
 ];
 
 // Section 6: Sync Features
 const syncFeatures = [
-  { icon: Zap, title: "Real-time Sync", description: "Data updates in seconds, not hours. See changes as they happen in your source systems." },
-  { icon: RefreshCw, title: "Incremental Updates", description: "Only sync changed data to minimize load and maximize efficiency." },
-  { icon: Clock, title: "Scheduled Sync", description: "Set custom sync schedules - hourly, daily, or on-demand." },
-  { icon: Shield, title: "Error Handling", description: "Automatic retries and detailed error logs keep your data flowing." },
-  { icon: Database, title: "Historical Backfill", description: "Import historical data when you first connect a new source." },
-  { icon: Globe, title: "Multi-region Support", description: "Connect to data sources across different regions and cloud providers." },
+  { icon: Zap, title: "Sync Real-time", description: "Data terupdate dalam hitungan detik, bukan jam. Lihat perubahan saat terjadi di sistem sumber." },
+  { icon: RefreshCw, title: "Update Incremental", description: "Hanya sync data yang berubah untuk meminimalkan beban dan memaksimalkan efisiensi." },
+  { icon: Clock, title: "Sync Terjadwal", description: "Atur jadwal sync kustom - per jam, harian, atau sesuai permintaan." },
+  { icon: Shield, title: "Penanganan Error", description: "Retry otomatis dan log error detail menjaga data Anda tetap mengalir." },
+  { icon: Database, title: "Backfill Historis", description: "Import data historis saat pertama kali menghubungkan sumber baru." },
+  { icon: Globe, title: "Dukungan Multi-region", description: "Hubungkan ke sumber data di berbagai region dan cloud provider." },
 ];
 
 // Section 7: Security Features
 const securityFeatures = [
-  { title: "SOC 2 Type II", description: "Audited security controls and practices", icon: Shield },
-  { title: "End-to-end Encryption", description: "TLS 1.3 for data in transit, AES-256 at rest", icon: Lock },
-  { title: "OAuth 2.0", description: "Secure token-based authentication", icon: RefreshCw },
-  { title: "IP Whitelisting", description: "Restrict access to known IP addresses", icon: Globe },
-  { title: "Audit Logs", description: "Complete visibility into all data access", icon: FileJson },
-  { title: "GDPR Compliant", description: "Full compliance with data privacy regulations", icon: CheckCircle },
+  { title: "SOC 2 Type II", description: "Kontrol dan praktik keamanan teraudit", icon: Shield },
+  { title: "Enkripsi End-to-end", description: "TLS 1.3 untuk data in transit, AES-256 at rest", icon: Lock },
+  { title: "OAuth 2.0", description: "Autentikasi berbasis token yang aman", icon: RefreshCw },
+  { title: "IP Whitelisting", description: "Batasi akses ke alamat IP yang dikenal", icon: Globe },
+  { title: "Audit Logs", description: "Visibilitas lengkap ke semua akses data", icon: FileJson },
+  { title: "GDPR Compliant", description: "Kepatuhan penuh dengan regulasi privasi data", icon: CheckCircle },
 ];
 
 // Section 8: Custom Integration
 const apiFeatures = [
-  { icon: Terminal, title: "REST API", description: "Full-featured REST API for custom data ingestion and retrieval" },
-  { icon: Webhook, title: "Webhooks", description: "Push data to CloudMetrics with real-time webhook endpoints" },
-  { icon: Code, title: "SDKs", description: "Official SDKs for Python, JavaScript, Ruby, and more" },
-  { icon: FileJson, title: "GraphQL", description: "Flexible GraphQL API for complex data queries" },
+  { icon: Terminal, title: "REST API", description: "REST API lengkap untuk ingestion dan retrieval data kustom" },
+  { icon: Webhook, title: "Webhooks", description: "Push data ke CloudMetrics dengan endpoint webhook real-time" },
+  { icon: Code, title: "SDK", description: "SDK resmi untuk Python, JavaScript, Ruby, dan lainnya" },
+  { icon: FileJson, title: "GraphQL", description: "GraphQL API fleksibel untuk query data kompleks" },
 ];
 
 // Section 9: Testimonials
 const testimonials = [
   {
-    quote: "Setting up our Salesforce integration took 5 minutes. We had real-time sales dashboards the same day.",
+    quote: "Setup integrasi Salesforce kami hanya butuh 5 menit. Kami punya dashboard penjualan real-time di hari yang sama.",
     author: "Sarah Chen",
     role: "VP of Sales",
     company: "TechScale Inc",
     avatar: "SC",
   },
   {
-    quote: "The Stripe integration gives us visibility into MRR, churn, and cohort analysis we never had before.",
+    quote: "Integrasi Stripe memberi kami visibilitas ke MRR, churn, dan analisis cohort yang belum pernah kami miliki sebelumnya.",
     author: "Marcus Rodriguez",
     role: "CEO",
     company: "SaaS Startup",
     avatar: "MR",
   },
   {
-    quote: "We connected 15 different data sources in one afternoon. The no-code setup is incredible.",
+    quote: "Kami menghubungkan 15 sumber data berbeda dalam satu sore. Setup tanpa kode-nya luar biasa.",
     author: "Emily Watson",
     role: "Data Lead",
     company: "Retail Giant",
@@ -198,28 +198,28 @@ const testimonials = [
 // Section 10: FAQ
 const faqs = [
   {
-    question: "How long does it take to set up an integration?",
-    answer: "Most integrations take less than 5 minutes to set up. Simply authenticate with your account, select the data you want to sync, and you're ready to go.",
+    question: "Berapa lama waktu yang dibutuhkan untuk setup integrasi?",
+    answer: "Sebagian besar integrasi butuh kurang dari 5 menit untuk setup. Cukup autentikasi dengan akun Anda, pilih data yang ingin di-sync, dan Anda siap.",
   },
   {
-    question: "Is my data secure during transfer?",
-    answer: "Absolutely. All data is encrypted using TLS 1.3 during transfer and AES-256 at rest. We're SOC 2 Type II certified and GDPR compliant.",
+    question: "Apakah data saya aman selama transfer?",
+    answer: "Tentu saja. Semua data dienkripsi menggunakan TLS 1.3 selama transfer dan AES-256 at rest. Kami bersertifikat SOC 2 Type II dan GDPR compliant.",
   },
   {
-    question: "Can I build custom integrations?",
-    answer: "Yes! We offer a REST API, webhooks, and SDKs for Python, JavaScript, Ruby, Go, and more. You can push any data to CloudMetrics programmatically.",
+    question: "Bisakah saya membuat integrasi kustom?",
+    answer: "Ya! Kami menawarkan REST API, webhooks, dan SDK untuk Python, JavaScript, Ruby, Go, dan lainnya. Anda bisa push data apa pun ke CloudMetrics secara programatis.",
   },
   {
-    question: "How often does data sync?",
-    answer: "It depends on the integration. Many support real-time sync, while others refresh every 15 minutes, hourly, or daily. You can also trigger manual syncs anytime.",
+    question: "Seberapa sering data di-sync?",
+    answer: "Tergantung integrasinya. Banyak yang mendukung sync real-time, sementara yang lain refresh setiap 15 menit, per jam, atau harian. Anda juga bisa trigger sync manual kapan saja.",
   },
   {
-    question: "What happens if an integration fails?",
-    answer: "We automatically retry failed syncs with exponential backoff. You'll receive alerts if issues persist, and our support team is available 24/7 to help.",
+    question: "Apa yang terjadi jika integrasi gagal?",
+    answer: "Kami otomatis retry sync yang gagal dengan exponential backoff. Anda akan menerima alert jika masalah berlanjut, dan tim support kami tersedia 24/7 untuk membantu.",
   },
   {
-    question: "Do you support on-premise data sources?",
-    answer: "Yes! We offer a secure tunnel agent that you can deploy in your infrastructure to connect on-premise databases and APIs securely.",
+    question: "Apakah Anda mendukung sumber data on-premise?",
+    answer: "Ya! Kami menawarkan secure tunnel agent yang bisa Anda deploy di infrastruktur Anda untuk menghubungkan database dan API on-premise dengan aman.",
   },
 ];
 
@@ -253,25 +253,25 @@ export default function IntegrationsPage() {
             <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 mb-6">
               <Plug className="h-8 w-8 text-white" />
             </div>
-            <Badge variant="secondary" className="mb-4">150+ Integrations</Badge>
+            <Badge variant="secondary" className="mb-4">150+ Integrasi</Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-4">
-              Connect your{" "}
-              <span className="gradient-text">entire tech stack</span>
+              Hubungkan{" "}
+              <span className="gradient-text">seluruh tech stack Anda</span>
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              From databases to SaaS apps, connect all your data sources in minutes. No code required.
+              Dari database hingga aplikasi SaaS, hubungkan semua sumber data Anda dalam hitungan menit. Tanpa kode.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/signup">
                 <Button size="lg">
-                  Start Free Trial
+                  Mulai Uji Coba Gratis
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/demo">
                 <Button size="lg" variant="outline">
                   <Play className="mr-2 h-4 w-4" />
-                  Watch Demo
+                  Lihat Demo
                 </Button>
               </Link>
             </div>
@@ -304,12 +304,12 @@ export default function IntegrationsPage() {
             transition={{ duration: 0.5 }}
             className="text-center mb-12"
           >
-            <Badge variant="outline" className="mb-4">Categories</Badge>
+            <Badge variant="outline" className="mb-4">Kategori</Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-              Integrations for every need
+              Integrasi untuk setiap kebutuhan
             </h2>
             <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-              Browse integrations by category to find the tools you already use.
+              Jelajahi integrasi berdasarkan kategori untuk menemukan tools yang sudah Anda gunakan.
             </p>
           </motion.div>
 
@@ -354,13 +354,13 @@ export default function IntegrationsPage() {
           >
             <Badge variant="outline" className="mb-4">
               <Star className="mr-1 h-3 w-3" />
-              Most Popular
+              Paling Populer
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-              Featured integrations
+              Integrasi unggulan
             </h2>
             <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-              The most popular integrations used by thousands of companies.
+              Integrasi paling populer yang digunakan ribuan perusahaan.
             </p>
           </motion.div>
 
@@ -380,7 +380,7 @@ export default function IntegrationsPage() {
                         {integration.logo}
                       </div>
                       {integration.popular && (
-                        <Badge className="bg-orange-100 text-orange-700 border-orange-200">Popular</Badge>
+                        <Badge className="bg-orange-100 text-orange-700 border-orange-200">Populer</Badge>
                       )}
                     </div>
                     <h3 className="font-semibold text-slate-900 mb-1">{integration.name}</h3>
@@ -406,13 +406,13 @@ export default function IntegrationsPage() {
           >
             <Badge variant="outline" className="mb-4">
               <Search className="mr-1 h-3 w-3" />
-              Directory
+              Direktori
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-              Browse all integrations
+              Jelajahi semua integrasi
             </h2>
             <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-              Search our complete directory of 150+ integrations.
+              Cari direktori lengkap 150+ integrasi kami.
             </p>
           </motion.div>
 
@@ -421,7 +421,7 @@ export default function IntegrationsPage() {
             <div className="relative flex-1">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400" />
               <Input
-                placeholder="Search integrations..."
+                placeholder="Cari integrasi..."
                 className="pl-12"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -469,7 +469,7 @@ export default function IntegrationsPage() {
           {filteredIntegrations.length > 24 && (
             <div className="mt-8 text-center">
               <Button variant="outline" size="lg">
-                View All {filteredIntegrations.length} Integrations
+                Lihat Semua {filteredIntegrations.length} Integrasi
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
@@ -489,13 +489,13 @@ export default function IntegrationsPage() {
           >
             <Badge variant="outline" className="mb-4 border-slate-600 text-slate-300">
               <Zap className="mr-1 h-3 w-3" />
-              Easy Setup
+              Setup Mudah
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
-              Connect in minutes, not days
+              Terhubung dalam menit, bukan hari
             </h2>
             <p className="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">
-              Our no-code setup wizard makes connecting your data sources effortless.
+              Wizard setup tanpa kode kami membuat penghubungan sumber data Anda menjadi mudah.
             </p>
           </motion.div>
 
@@ -542,13 +542,13 @@ export default function IntegrationsPage() {
           >
             <Badge variant="outline" className="mb-4">
               <RefreshCw className="mr-1 h-3 w-3" />
-              Data Sync
+              Sync Data
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-              Powerful sync capabilities
+              Kemampuan sync yang powerful
             </h2>
             <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-              Keep your data fresh and accurate with our advanced sync engine.
+              Jaga data Anda tetap fresh dan akurat dengan sync engine canggih kami.
             </p>
           </motion.div>
 
@@ -592,13 +592,13 @@ export default function IntegrationsPage() {
             >
               <Badge variant="outline" className="mb-4">
                 <Shield className="mr-1 h-3 w-3" />
-                Security
+                Keamanan
               </Badge>
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-                Enterprise-grade security for your data
+                Keamanan tingkat enterprise untuk data Anda
               </h2>
               <p className="text-lg text-slate-600 mb-8">
-                Your data is protected by industry-leading security practices. We're SOC 2 Type II certified and compliant with GDPR, CCPA, and HIPAA.
+                Data Anda dilindungi oleh praktik keamanan terdepan di industri. Kami bersertifikat SOC 2 Type II dan mematuhi GDPR, CCPA, dan HIPAA.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {securityFeatures.map((feature) => (
@@ -627,7 +627,7 @@ export default function IntegrationsPage() {
                   <Shield className="h-12 w-12 text-emerald-400" />
                   <div>
                     <div className="text-2xl font-bold text-white">SOC 2 Type II</div>
-                    <div className="text-slate-400">Certified</div>
+                    <div className="text-slate-400">Tersertifikasi</div>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -656,13 +656,13 @@ export default function IntegrationsPage() {
           >
             <Badge variant="outline" className="mb-4">
               <Code className="mr-1 h-3 w-3" />
-              Developer API
+              API Developer
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-              Build custom integrations
+              Bangun integrasi kustom
             </h2>
             <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-              Don't see what you need? Build it yourself with our powerful API and SDKs.
+              Tidak menemukan yang Anda butuhkan? Bangun sendiri dengan API dan SDK powerful kami.
             </p>
           </motion.div>
 
@@ -709,7 +709,7 @@ export default function IntegrationsPage() {
                 <Link href="/docs/api">
                   <Button className="w-full bg-orange-500 hover:bg-orange-600">
                     <BookOpen className="mr-2 h-4 w-4" />
-                    View API Documentation
+                    Lihat Dokumentasi API
                   </Button>
                 </Link>
               </div>
@@ -730,10 +730,10 @@ export default function IntegrationsPage() {
           >
             <Badge variant="outline" className="mb-4">
               <Users className="mr-1 h-3 w-3" />
-              Customer Stories
+              Kisah Pelanggan
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-              Loved by data teams everywhere
+              Dicintai tim data di mana saja
             </h2>
           </motion.div>
 
@@ -786,7 +786,7 @@ export default function IntegrationsPage() {
               FAQ
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-              Frequently asked questions
+              Pertanyaan yang sering diajukan
             </h2>
           </motion.div>
 
@@ -836,26 +836,26 @@ export default function IntegrationsPage() {
             className="text-center"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Ready to connect your data?
+              Siap menghubungkan data Anda?
             </h2>
             <p className="text-lg text-orange-100 max-w-2xl mx-auto mb-8">
-              Start your free trial today and connect your entire tech stack in minutes.
+              Mulai uji coba gratis hari ini dan hubungkan seluruh tech stack Anda dalam hitungan menit.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/signup">
                 <Button size="lg" className="bg-white text-orange-600 hover:bg-orange-50">
-                  Start Free Trial
+                  Mulai Uji Coba Gratis
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/demo">
                 <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
-                  Talk to Sales
+                  Hubungi Sales
                 </Button>
               </Link>
             </div>
             <p className="mt-6 text-sm text-orange-100">
-              No credit card required. 14-day free trial.
+              Tanpa kartu kredit. Uji coba gratis 14 hari.
             </p>
           </motion.div>
         </div>

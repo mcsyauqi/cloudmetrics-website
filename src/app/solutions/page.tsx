@@ -21,74 +21,74 @@ const solutions = [
   {
     icon: Building2,
     title: "Enterprise",
-    description: "Scalable analytics for large organizations with complex data needs and strict security requirements.",
-    benefits: ["Unlimited users", "SOC 2 Type II", "Dedicated support", "Custom SLAs"],
+    description: "Analitik skalabel untuk organisasi besar dengan kebutuhan data kompleks dan persyaratan keamanan ketat.",
+    benefits: ["User unlimited", "SOC 2 Type II", "Support dedicated", "SLA kustom"],
     href: "/solutions/enterprise",
     color: "from-blue-500 to-blue-600",
   },
   {
     icon: ShoppingCart,
     title: "E-commerce",
-    description: "Optimize your online store with real-time conversion tracking, inventory insights, and customer analytics.",
-    benefits: ["Conversion tracking", "Cart analytics", "Customer segments", "Revenue forecasting"],
+    description: "Optimalkan toko online Anda dengan tracking konversi real-time, insight inventori, dan analitik pelanggan.",
+    benefits: ["Tracking konversi", "Analitik keranjang", "Segmen pelanggan", "Prediksi revenue"],
     href: "/solutions/ecommerce",
     color: "from-orange-500 to-orange-600",
   },
   {
     icon: Stethoscope,
-    title: "Healthcare",
-    description: "HIPAA-compliant analytics for healthcare organizations to improve patient outcomes and operational efficiency.",
-    benefits: ["HIPAA compliant", "Patient analytics", "Operational metrics", "Compliance reports"],
+    title: "Kesehatan",
+    description: "Analitik HIPAA-compliant untuk organisasi kesehatan guna meningkatkan outcome pasien dan efisiensi operasional.",
+    benefits: ["HIPAA compliant", "Analitik pasien", "Metrik operasional", "Laporan kepatuhan"],
     href: "/solutions/healthcare",
     color: "from-emerald-500 to-emerald-600",
   },
   {
     icon: GraduationCap,
-    title: "Education",
-    description: "Track student engagement, learning outcomes, and institutional performance with educational analytics.",
-    benefits: ["Student tracking", "Course analytics", "Retention metrics", "Performance insights"],
+    title: "Pendidikan",
+    description: "Lacak engagement siswa, hasil pembelajaran, dan performa institusi dengan analitik pendidikan.",
+    benefits: ["Tracking siswa", "Analitik kursus", "Metrik retensi", "Insight performa"],
     href: "/solutions/education",
     color: "from-purple-500 to-purple-600",
   },
   {
     icon: Rocket,
-    title: "Startups",
-    description: "Move fast with analytics designed for growing companies. Get insights without the enterprise complexity.",
-    benefits: ["Quick setup", "Growth metrics", "Investor reports", "Affordable pricing"],
+    title: "Startup",
+    description: "Bergerak cepat dengan analitik yang dirancang untuk perusahaan berkembang. Dapatkan insight tanpa kompleksitas enterprise.",
+    benefits: ["Setup cepat", "Metrik pertumbuhan", "Laporan investor", "Harga terjangkau"],
     href: "/solutions/startups",
     color: "from-pink-500 to-pink-600",
   },
   {
     icon: Landmark,
-    title: "Financial Services",
-    description: "Secure, compliant analytics for banks, fintech, and financial institutions with real-time fraud detection.",
-    benefits: ["Fraud detection", "Risk analytics", "Compliance ready", "Real-time alerts"],
+    title: "Layanan Keuangan",
+    description: "Analitik aman dan compliant untuk bank, fintech, dan lembaga keuangan dengan deteksi fraud real-time.",
+    benefits: ["Deteksi fraud", "Analitik risiko", "Siap kepatuhan", "Alert real-time"],
     href: "/solutions/financial",
     color: "from-indigo-500 to-indigo-600",
   },
   {
     icon: Plane,
     title: "Travel & Hospitality",
-    description: "Optimize bookings, understand guest behavior, and maximize revenue with hospitality-focused analytics.",
-    benefits: ["Booking analytics", "Guest insights", "Revenue optimization", "Demand forecasting"],
+    description: "Optimalkan booking, pahami perilaku tamu, dan maksimalkan revenue dengan analitik hospitality.",
+    benefits: ["Analitik booking", "Insight tamu", "Optimasi revenue", "Prediksi permintaan"],
     href: "/solutions/travel",
     color: "from-cyan-500 to-cyan-600",
   },
   {
     icon: Factory,
-    title: "Manufacturing",
-    description: "Monitor production lines, track quality metrics, and optimize supply chain with industrial analytics.",
-    benefits: ["Production monitoring", "Quality control", "Supply chain", "Predictive maintenance"],
+    title: "Manufaktur",
+    description: "Monitor lini produksi, lacak metrik kualitas, dan optimalkan supply chain dengan analitik industri.",
+    benefits: ["Monitoring produksi", "Kontrol kualitas", "Supply chain", "Maintenance prediktif"],
     href: "/solutions/manufacturing",
     color: "from-slate-500 to-slate-600",
   },
 ];
 
 const stats = [
-  { value: "1,000+", label: "Companies across industries" },
-  { value: "50M+", label: "Data points processed daily" },
+  { value: "1.000+", label: "Perusahaan lintas industri" },
+  { value: "50Jt+", label: "Data point diproses harian" },
   { value: "99.9%", label: "Platform uptime" },
-  { value: "4.9/5", label: "Customer satisfaction" },
+  { value: "4.9/5", label: "Kepuasan pelanggan" },
 ];
 
 export default function SolutionsPage() {
@@ -105,14 +105,14 @@ export default function SolutionsPage() {
           >
             <Badge variant="secondary" className="mb-6">
               <Building2 className="mr-1 h-3 w-3" />
-              Industry Solutions
+              Solusi Industri
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900">
-              Built for{" "}
-              <span className="gradient-text">your industry</span>
+              Dibangun untuk{" "}
+              <span className="gradient-text">industri Anda</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-slate-600">
-              Tailored analytics solutions designed to address the unique challenges of your industry.
+              Solusi analitik yang disesuaikan untuk mengatasi tantangan unik industri Anda.
             </p>
           </motion.div>
 
@@ -177,7 +177,7 @@ export default function SolutionsPage() {
 
                         {/* Link */}
                         <div className="flex items-center text-sm font-medium text-primary">
-                          Learn more
+                          Pelajari lebih lanjut
                           <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                         </div>
                       </div>
@@ -201,14 +201,14 @@ export default function SolutionsPage() {
             className="text-center"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Don&apos;t see your industry?
+              Tidak melihat industri Anda?
             </h2>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto mb-8">
-              CloudMetrics is flexible enough to handle any use case. Talk to our team about your specific needs.
+              CloudMetrics cukup fleksibel untuk menangani use case apa pun. Diskusikan kebutuhan spesifik Anda dengan tim kami.
             </p>
             <Link href="/demo">
               <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100">
-                Talk to Sales
+                Hubungi Sales
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>

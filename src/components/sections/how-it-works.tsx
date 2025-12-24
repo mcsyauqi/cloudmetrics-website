@@ -7,29 +7,29 @@ const steps = [
   {
     icon: Database,
     step: "01",
-    title: "Connect Your Data",
-    description: "Integrate with 100+ data sources in minutes. From databases to SaaS tools, we handle the heavy lifting.",
+    title: "Hubungkan Data Anda",
+    description: "Integrasikan dengan 100+ sumber data dalam hitungan menit. Dari database hingga tools SaaS, kami yang menangani.",
     color: "from-blue-500 to-blue-600",
   },
   {
     icon: Cog,
     step: "02",
-    title: "Configure Metrics",
-    description: "Define the KPIs that matter to your business. Use our templates or create custom metrics effortlessly.",
+    title: "Konfigurasi Metrik",
+    description: "Tentukan KPI yang penting untuk bisnis Anda. Gunakan template kami atau buat metrik kustom dengan mudah.",
     color: "from-indigo-500 to-indigo-600",
   },
   {
     icon: LineChart,
     step: "03",
-    title: "Build Dashboards",
-    description: "Create stunning visualizations with our drag-and-drop builder. No SQL or coding required.",
+    title: "Bangun Dashboard",
+    description: "Buat visualisasi memukau dengan builder drag-and-drop. Tidak perlu SQL atau coding.",
     color: "from-violet-500 to-violet-600",
   },
   {
     icon: Rocket,
     step: "04",
-    title: "Take Action",
-    description: "Get AI-powered insights and alerts. Make data-driven decisions that grow your business.",
+    title: "Ambil Tindakan",
+    description: "Dapatkan insight dan notifikasi berbasis AI. Buat keputusan berbasis data yang mengembangkan bisnis Anda.",
     color: "from-purple-500 to-purple-600",
   },
 ];
@@ -46,13 +46,13 @@ export function HowItWorks() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">How It Works</span>
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Cara Kerja</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-slate-900">
-            From data chaos to{" "}
-            <span className="gradient-text">clarity in minutes</span>
+            Dari kekacauan data menjadi{" "}
+            <span className="gradient-text">kejelasan dalam hitungan menit</span>
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            Get up and running with CloudMetrics in four simple steps. No complex setup required.
+            Mulai gunakan CloudMetrics dalam empat langkah sederhana. Tidak perlu setup yang rumit.
           </p>
         </motion.div>
 
@@ -100,7 +100,7 @@ export function HowItWorks() {
           className="mt-16 text-center"
         >
           <p className="text-slate-600 mb-4">
-            Average setup time: <span className="font-semibold text-slate-900">15 minutes</span>
+            Rata-rata waktu setup: <span className="font-semibold text-slate-900">15 menit</span>
           </p>
         </motion.div>
       </div>

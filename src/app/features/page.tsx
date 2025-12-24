@@ -26,59 +26,59 @@ import {
 const features = [
   {
     icon: BarChart3,
-    title: "Real-time Dashboards",
-    description: "Create stunning, live-updating dashboards that visualize your data as it happens. Drag-and-drop interface makes it easy for anyone to build professional visualizations.",
-    benefits: ["Live data updates", "Drag-and-drop builder", "50+ chart types", "Custom themes"],
+    title: "Dashboard Real-time",
+    description: "Buat dashboard menakjubkan yang terupdate secara live saat data masuk. Interface drag-and-drop memudahkan siapa saja membuat visualisasi profesional.",
+    benefits: ["Update data langsung", "Builder drag-and-drop", "50+ jenis chart", "Tema kustom"],
     href: "/features/dashboards",
     color: "from-blue-500 to-blue-600",
   },
   {
     icon: Sparkles,
     title: "AI-Powered Insights",
-    description: "Let machine learning do the heavy lifting. Our AI automatically identifies trends, anomalies, and opportunities you might miss.",
-    benefits: ["Anomaly detection", "Trend forecasting", "Smart alerts", "Natural language queries"],
+    description: "Biarkan machine learning bekerja untuk Anda. AI kami secara otomatis mengidentifikasi tren, anomali, dan peluang yang mungkin terlewat.",
+    benefits: ["Deteksi anomali", "Prediksi tren", "Alert cerdas", "Query bahasa natural"],
     href: "/features/ai-insights",
     color: "from-violet-500 to-violet-600",
   },
   {
     icon: FileText,
-    title: "Custom Reports",
-    description: "Generate beautiful, branded reports that tell your data story. Schedule automated delivery to stakeholders on any cadence.",
-    benefits: ["Branded templates", "Scheduled delivery", "Multiple formats", "Interactive elements"],
+    title: "Laporan Kustom",
+    description: "Generate laporan branded yang menceritakan data Anda. Jadwalkan pengiriman otomatis ke stakeholder sesuai kebutuhan.",
+    benefits: ["Template branded", "Pengiriman terjadwal", "Berbagai format", "Elemen interaktif"],
     href: "/features/reports",
     color: "from-emerald-500 to-emerald-600",
   },
   {
     icon: Plug,
-    title: "100+ Integrations",
-    description: "Connect to your entire tech stack in minutes. From databases to SaaS tools, we have pre-built connectors for everything.",
-    benefits: ["Pre-built connectors", "Custom APIs", "Real-time sync", "No-code setup"],
+    title: "100+ Integrasi",
+    description: "Hubungkan seluruh tech stack Anda dalam menit. Dari database hingga tools SaaS, kami punya konektor pre-built untuk semuanya.",
+    benefits: ["Konektor pre-built", "API kustom", "Sync real-time", "Setup tanpa kode"],
     href: "/features/integrations",
     color: "from-orange-500 to-orange-600",
   },
   {
     icon: Bell,
-    title: "Smart Alerts",
-    description: "Never miss a critical change. Set up intelligent alerts that notify you via Slack, email, or SMS when metrics move.",
-    benefits: ["Multi-channel alerts", "Threshold triggers", "Anomaly alerts", "Alert routing"],
+    title: "Alert Cerdas",
+    description: "Jangan lewatkan perubahan penting. Atur alert cerdas yang memberitahu Anda via Slack, email, atau SMS saat metrik berubah.",
+    benefits: ["Alert multi-channel", "Trigger threshold", "Alert anomali", "Routing alert"],
     href: "/features/alerts",
     color: "from-pink-500 to-pink-600",
   },
   {
     icon: Users,
-    title: "Team Collaboration",
-    description: "Work together seamlessly with shared dashboards, annotations, and real-time commenting features built for modern teams.",
-    benefits: ["Shared dashboards", "Comments & mentions", "Version history", "Role-based access"],
+    title: "Kolaborasi Tim",
+    description: "Bekerja bersama dengan lancar melalui dashboard bersama, anotasi, dan fitur komentar real-time yang dibangun untuk tim modern.",
+    benefits: ["Dashboard bersama", "Komentar & mention", "Riwayat versi", "Akses berbasis role"],
     href: "/features/collaboration",
     color: "from-cyan-500 to-cyan-600",
   },
 ];
 
 const enterpriseFeatures = [
-  { icon: Shield, title: "SOC 2 Type II Certified", description: "Enterprise-grade security and compliance" },
-  { icon: Lock, title: "SSO & SAML", description: "Single sign-on with your identity provider" },
-  { icon: Globe, title: "Global Infrastructure", description: "Deploy in any region for data residency" },
-  { icon: Cpu, title: "Dedicated Resources", description: "Isolated compute for maximum performance" },
+  { icon: Shield, title: "Sertifikasi SOC 2 Type II", description: "Keamanan dan kepatuhan tingkat enterprise" },
+  { icon: Lock, title: "SSO & SAML", description: "Single sign-on dengan identity provider Anda" },
+  { icon: Globe, title: "Infrastruktur Global", description: "Deploy di region mana saja untuk data residency" },
+  { icon: Cpu, title: "Resource Dedicated", description: "Compute terisolasi untuk performa maksimal" },
 ];
 
 export default function FeaturesPage() {
@@ -95,27 +95,27 @@ export default function FeaturesPage() {
           >
             <Badge variant="secondary" className="mb-6">
               <Layers className="mr-1 h-3 w-3" />
-              Platform Features
+              Fitur Platform
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900">
-              Powerful analytics,{" "}
-              <span className="gradient-text">beautifully simple</span>
+              Analitik powerful,{" "}
+              <span className="gradient-text">simpel dan indah</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-slate-600">
-              Everything you need to understand your data and make smarter decisions.
-              Built for teams of all sizes.
+              Semua yang Anda butuhkan untuk memahami data dan membuat keputusan lebih cerdas.
+              Dibangun untuk tim dari semua ukuran.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/signup">
                 <Button size="lg">
-                  Start Free Trial
+                  Mulai Uji Coba Gratis
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/demo">
                 <Button size="lg" variant="outline">
                   <Play className="mr-2 h-4 w-4" />
-                  Watch Demo
+                  Lihat Demo
                 </Button>
               </Link>
             </div>
@@ -162,7 +162,7 @@ export default function FeaturesPage() {
 
                     {/* Link */}
                     <div className="mt-6 flex items-center text-sm font-medium text-primary group-hover:gap-2 transition-all">
-                      Learn more
+                      Pelajari lebih lanjut
                       <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
@@ -185,13 +185,13 @@ export default function FeaturesPage() {
           >
             <Badge variant="outline" className="mb-6 border-slate-700 text-slate-300">
               <Shield className="mr-1 h-3 w-3" />
-              Enterprise Ready
+              Siap Enterprise
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
-              Built for enterprise scale
+              Dibangun untuk skala enterprise
             </h2>
             <p className="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">
-              Security, compliance, and performance that meets the demands of the world&apos;s largest organizations.
+              Keamanan, kepatuhan, dan performa yang memenuhi kebutuhan organisasi terbesar di dunia.
             </p>
           </motion.div>
 
@@ -221,7 +221,7 @@ export default function FeaturesPage() {
           >
             <Link href="/solutions/enterprise">
               <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100">
-                Explore Enterprise
+                Jelajahi Enterprise
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -241,14 +241,14 @@ export default function FeaturesPage() {
           >
             <LineChart className="h-12 w-12 text-primary mx-auto mb-6" />
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-              See how CloudMetrics compares
+              Lihat perbandingan CloudMetrics
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
-              Compare features, pricing, and capabilities with other analytics platforms.
+              Bandingkan fitur, harga, dan kemampuan dengan platform analitik lainnya.
             </p>
             <Link href="/compare">
               <Button size="lg">
-                View Comparisons
+                Lihat Perbandingan
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>

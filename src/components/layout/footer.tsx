@@ -3,36 +3,36 @@ import { BarChart3, Twitter, Linkedin, Github, Youtube } from "lucide-react";
 
 const footerLinks = {
   product: [
-    { name: "Features", href: "/features" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "Integrations", href: "/features/integrations" },
+    { name: "Fitur", href: "/features" },
+    { name: "Harga", href: "/pricing" },
+    { name: "Integrasi", href: "/features/integrations" },
     { name: "API", href: "/docs/api" },
     { name: "Changelog", href: "/changelog" },
   ],
   solutions: [
     { name: "Enterprise", href: "/solutions/enterprise" },
     { name: "E-commerce", href: "/solutions/ecommerce" },
-    { name: "Healthcare", href: "/solutions/healthcare" },
-    { name: "Startups", href: "/solutions/startups" },
+    { name: "Kesehatan", href: "/solutions/healthcare" },
+    { name: "Startup", href: "/solutions/startups" },
   ],
   resources: [
-    { name: "Documentation", href: "/docs" },
+    { name: "Dokumentasi", href: "/docs" },
     { name: "Blog", href: "/resources" },
-    { name: "Case Studies", href: "/customers" },
-    { name: "Webinars", href: "/resources/webinars" },
-    { name: "Help Center", href: "/support" },
+    { name: "Studi Kasus", href: "/customers" },
+    { name: "Webinar", href: "/resources/webinars" },
+    { name: "Pusat Bantuan", href: "/support" },
   ],
   company: [
-    { name: "About", href: "/about" },
-    { name: "Careers", href: "/careers" },
-    { name: "Contact", href: "/contact" },
+    { name: "Tentang Kami", href: "/about" },
+    { name: "Karir", href: "/careers" },
+    { name: "Kontak", href: "/contact" },
     { name: "Press", href: "/press" },
-    { name: "Partners", href: "/partners" },
+    { name: "Mitra", href: "/partners" },
   ],
   legal: [
-    { name: "Privacy", href: "/privacy" },
-    { name: "Terms", href: "/terms" },
-    { name: "Security", href: "/security" },
+    { name: "Privasi", href: "/privacy" },
+    { name: "Ketentuan", href: "/terms" },
+    { name: "Keamanan", href: "/security" },
     { name: "GDPR", href: "/gdpr" },
   ],
 };
@@ -59,7 +59,7 @@ export function Footer() {
               <span className="text-xl font-bold text-white">CloudMetrics</span>
             </Link>
             <p className="mt-4 text-sm text-slate-400 leading-relaxed">
-              Turn data into decisions. Real-time analytics platform for modern businesses.
+              Ubah data menjadi keputusan. Platform analitik real-time untuk bisnis modern.
             </p>
             <div className="mt-6 flex gap-4">
               {socialLinks.map((item) => (
@@ -77,7 +77,7 @@ export function Footer() {
 
           {/* Product Links */}
           <div>
-            <h3 className="text-sm font-semibold text-white">Product</h3>
+            <h3 className="text-sm font-semibold text-white">Produk</h3>
             <ul className="mt-4 space-y-3">
               {footerLinks.product.map((item) => (
                 <li key={item.name}>
@@ -94,7 +94,7 @@ export function Footer() {
 
           {/* Solutions Links */}
           <div>
-            <h3 className="text-sm font-semibold text-white">Solutions</h3>
+            <h3 className="text-sm font-semibold text-white">Solusi</h3>
             <ul className="mt-4 space-y-3">
               {footerLinks.solutions.map((item) => (
                 <li key={item.name}>
@@ -111,7 +111,7 @@ export function Footer() {
 
           {/* Resources Links */}
           <div>
-            <h3 className="text-sm font-semibold text-white">Resources</h3>
+            <h3 className="text-sm font-semibold text-white">Sumber Daya</h3>
             <ul className="mt-4 space-y-3">
               {footerLinks.resources.map((item) => (
                 <li key={item.name}>
@@ -128,7 +128,7 @@ export function Footer() {
 
           {/* Company Links */}
           <div>
-            <h3 className="text-sm font-semibold text-white">Company</h3>
+            <h3 className="text-sm font-semibold text-white">Perusahaan</h3>
             <ul className="mt-4 space-y-3">
               {footerLinks.company.map((item) => (
                 <li key={item.name}>
@@ -167,7 +167,7 @@ export function Footer() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-slate-400">
-              &copy; {new Date().getFullYear()} CloudMetrics. All rights reserved.
+              &copy; {new Date().getFullYear()} CloudMetrics. Hak cipta dilindungi.
             </p>
             <div className="flex items-center gap-6">
               <span className="flex items-center gap-2 text-sm text-slate-400">
@@ -175,9 +175,23 @@ export function Footer() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                All systems operational
+                Semua sistem beroperasi
               </span>
             </div>
+          </div>
+          {/* Created by Creativism */}
+          <div className="mt-4 pt-4 border-t border-slate-800 text-center">
+            <p className="text-sm text-slate-500">
+              Created by{" "}
+              <a
+                href="https://creativism.co.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 font-medium transition-colors"
+              >
+                Creativism Digital Marketing
+              </a>
+            </p>
           </div>
         </div>
       </div>

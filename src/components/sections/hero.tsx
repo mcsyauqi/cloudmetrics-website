@@ -8,10 +8,10 @@ import { Play, Zap, ArrowRight, TrendingUp, Users, BarChart3 } from "lucide-reac
 import { DashboardMockup } from "@/components/sections/dashboard-mockup";
 
 const stats = [
-  { value: "1,000+", label: "Companies" },
-  { value: "50M+", label: "Data Points Daily" },
+  { value: "1.000+", label: "Perusahaan" },
+  { value: "50Jt+", label: "Data Harian" },
   { value: "99.9%", label: "Uptime" },
-  { value: "150+", label: "Integrations" },
+  { value: "150+", label: "Integrasi" },
 ];
 
 const logos = [
@@ -42,7 +42,7 @@ export function Hero() {
             >
               <Badge variant="secondary" className="mb-6">
                 <Zap className="mr-1 h-3 w-3" />
-                New: AI-Powered Insights Now Available
+                Baru: AI-Powered Insights Tersedia
               </Badge>
             </motion.div>
 
@@ -52,8 +52,8 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900"
             >
-              Turn Data Into{" "}
-              <span className="gradient-text">Decisions</span>
+              Ubah Data Menjadi{" "}
+              <span className="gradient-text">Keputusan</span>
             </motion.h1>
 
             <motion.p
@@ -62,7 +62,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="mt-6 text-lg sm:text-xl text-slate-600 max-w-xl mx-auto lg:mx-0"
             >
-              See Everything. Know Everything. Grow Faster. Real-time analytics platform that transforms your data into actionable business intelligence.
+              Lihat Segalanya. Ketahui Segalanya. Tumbuh Lebih Cepat. Platform analitik real-time yang mengubah data Anda menjadi insight bisnis yang dapat ditindaklanjuti.
             </motion.p>
 
             <motion.div
@@ -73,14 +73,14 @@ export function Hero() {
             >
               <Link href="/signup">
                 <Button size="xl" className="w-full sm:w-auto">
-                  Start Free Trial
+                  Coba Gratis
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link href="/demo">
                 <Button size="xl" variant="outline" className="w-full sm:w-auto">
                   <Play className="mr-2 h-5 w-5" />
-                  Watch Demo
+                  Lihat Demo
                 </Button>
               </Link>
             </motion.div>
@@ -92,7 +92,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="mt-10"
             >
-              <p className="text-sm text-slate-500 mb-4">Trusted by 1,000+ companies from startups to enterprises</p>
+              <p className="text-sm text-slate-500 mb-4">Dipercaya oleh 1.000+ perusahaan dari startup hingga enterprise</p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6">
                 {logos.map((logo) => (
                   <div

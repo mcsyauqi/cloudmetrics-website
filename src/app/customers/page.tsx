@@ -21,11 +21,11 @@ const caseStudies = [
     company: "TechScale Inc",
     industry: "SaaS",
     logo: "TS",
-    quote: "CloudMetrics transformed how we understand our customers. The real-time dashboards and AI insights have helped us increase conversion by 34%.",
+    quote: "CloudMetrics mengubah cara kami memahami pelanggan. Dashboard real-time dan AI insights membantu kami meningkatkan konversi hingga 34%.",
     author: "Sarah Chen",
     role: "VP of Growth",
     metric: "34%",
-    metricLabel: "Increase in conversion",
+    metricLabel: "Peningkatan konversi",
     href: "/customers/techscale",
     color: "from-blue-500 to-blue-600",
     icon: Rocket,
@@ -34,11 +34,11 @@ const caseStudies = [
     company: "DataFlow Systems",
     industry: "Enterprise",
     logo: "DF",
-    quote: "Finally, an analytics platform that our entire team actually uses. The interface is intuitive, and the integrations saved us months of engineering time.",
+    quote: "Akhirnya, platform analitik yang benar-benar digunakan seluruh tim. Interface-nya intuitif, dan integrasinya menghemat waktu engineering berbulan-bulan.",
     author: "Marcus Rodriguez",
     role: "CTO",
-    metric: "3 months",
-    metricLabel: "Engineering time saved",
+    metric: "3 bulan",
+    metricLabel: "Waktu engineering dihemat",
     href: "/customers/dataflow",
     color: "from-indigo-500 to-indigo-600",
     icon: Building2,
@@ -47,11 +47,11 @@ const caseStudies = [
     company: "Retail Giant Co",
     industry: "E-commerce",
     logo: "RG",
-    quote: "We evaluated 12 different analytics solutions. CloudMetrics was the clear winner for its combination of power, ease of use, and enterprise security.",
+    quote: "Kami mengevaluasi 12 solusi analitik berbeda. CloudMetrics jelas pemenangnya karena kombinasi kekuatan, kemudahan penggunaan, dan keamanan enterprise.",
     author: "Emily Watson",
     role: "Head of Data",
     metric: "$2M",
-    metricLabel: "Annual savings identified",
+    metricLabel: "Penghematan tahunan teridentifikasi",
     href: "/customers/retailgiant",
     color: "from-orange-500 to-orange-600",
     icon: ShoppingCart,
@@ -60,11 +60,11 @@ const caseStudies = [
     company: "GrowthMaster",
     industry: "Marketing",
     logo: "GM",
-    quote: "The ROI was immediate. Within the first month, we identified $2M in optimization opportunities using CloudMetrics' AI recommendations.",
+    quote: "ROI langsung terasa. Dalam bulan pertama, kami mengidentifikasi peluang optimasi senilai $2M menggunakan rekomendasi AI CloudMetrics.",
     author: "James Park",
     role: "CEO",
     metric: "47%",
-    metricLabel: "Revenue growth",
+    metricLabel: "Pertumbuhan revenue",
     href: "/customers/growthmaster",
     color: "from-emerald-500 to-emerald-600",
     icon: TrendingUp,
@@ -73,21 +73,21 @@ const caseStudies = [
 
 const testimonials = [
   {
-    content: "Support is incredible. When we needed a custom integration, they helped us implement it in days, not weeks.",
+    content: "Support-nya luar biasa. Saat kami butuh integrasi kustom, mereka membantu implementasi dalam hitungan hari, bukan minggu.",
     author: "Lisa Thompson",
     role: "Director of Analytics",
     company: "MedTech Solutions",
     avatar: "LT",
   },
   {
-    content: "CloudMetrics handles our 10B+ daily events without breaking a sweat. The performance is unmatched.",
+    content: "CloudMetrics menangani 10 miliar+ event harian kami tanpa masalah. Performanya tak tertandingi.",
     author: "David Kim",
     role: "VP Engineering",
     company: "ScaleUp Labs",
     avatar: "DK",
   },
   {
-    content: "The AI insights feature alone has paid for the platform 10x over. It catches things we'd never notice.",
+    content: "Fitur AI insights saja sudah membayar platform ini 10x lipat. Ia menangkap hal-hal yang tidak akan pernah kami sadari.",
     author: "Amanda Foster",
     role: "Data Lead",
     company: "InnovateCo",
@@ -114,14 +114,14 @@ export default function CustomersPage() {
           >
             <Badge variant="secondary" className="mb-6">
               <Users className="mr-1 h-3 w-3" />
-              Customer Stories
+              Kisah Pelanggan
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900">
-              Loved by{" "}
-              <span className="gradient-text">1,000+ companies</span>
+              Dicintai oleh{" "}
+              <span className="gradient-text">1.000+ perusahaan</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-slate-600">
-              See how leading companies use CloudMetrics to turn data into competitive advantage.
+              Lihat bagaimana perusahaan terkemuka menggunakan CloudMetrics untuk mengubah data menjadi keunggulan kompetitif.
             </p>
           </motion.div>
 
@@ -133,7 +133,7 @@ export default function CustomersPage() {
             className="mt-16"
           >
             <p className="text-center text-sm text-slate-500 mb-8">
-              Trusted by innovative companies worldwide
+              Dipercaya oleh perusahaan inovatif di seluruh dunia
             </p>
             <div className="flex flex-wrap justify-center gap-8 lg:gap-12">
               {logos.map((logo) => (
@@ -160,10 +160,10 @@ export default function CustomersPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-              Featured case studies
+              Studi kasus unggulan
             </h2>
             <p className="mt-4 text-lg text-slate-600">
-              Deep dives into how our customers achieved remarkable results.
+              Pendalaman tentang bagaimana pelanggan kami mencapai hasil luar biasa.
             </p>
           </motion.div>
 
@@ -216,7 +216,7 @@ export default function CustomersPage() {
                             <div className="text-sm text-slate-500">{study.role}</div>
                           </div>
                           <div className="flex items-center text-sm font-medium text-primary group-hover:gap-2 transition-all">
-                            Read story
+                            Baca cerita
                             <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                           </div>
                         </div>
@@ -241,7 +241,7 @@ export default function CustomersPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-              What our customers say
+              Apa kata pelanggan kami
             </h2>
           </motion.div>
 
@@ -291,21 +291,21 @@ export default function CustomersPage() {
             className="text-center"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Ready to join them?
+              Siap bergabung?
             </h2>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto mb-8">
-              Start your free trial today and see why 1,000+ companies trust CloudMetrics.
+              Mulai uji coba gratis hari ini dan lihat mengapa 1.000+ perusahaan mempercayai CloudMetrics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/signup">
                 <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100">
-                  Start Free Trial
+                  Mulai Uji Coba Gratis
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/demo">
                 <Button size="lg" variant="outline" className="border-slate-600 text-white hover:bg-slate-800">
-                  Book a Demo
+                  Jadwalkan Demo
                 </Button>
               </Link>
             </div>

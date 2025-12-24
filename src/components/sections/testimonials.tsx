@@ -5,7 +5,7 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    content: "CloudMetrics transformed how we understand our customers. The real-time dashboards and AI insights have helped us increase conversion by 34%.",
+    content: "CloudMetrics mengubah cara kami memahami pelanggan. Dashboard real-time dan AI insights membantu kami meningkatkan konversi hingga 34%.",
     author: "Sarah Chen",
     role: "VP of Growth",
     company: "TechScale Inc",
@@ -13,7 +13,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    content: "Finally, an analytics platform that our entire team actually uses. The interface is intuitive, and the integrations saved us months of engineering time.",
+    content: "Akhirnya, platform analitik yang benar-benar digunakan seluruh tim. Interface-nya intuitif, dan integrasinya menghemat waktu engineering berbulan-bulan.",
     author: "Marcus Rodriguez",
     role: "CTO",
     company: "DataFlow Systems",
@@ -21,7 +21,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    content: "We evaluated 12 different analytics solutions. CloudMetrics was the clear winner for its combination of power, ease of use, and enterprise security.",
+    content: "Kami mengevaluasi 12 solusi analitik berbeda. CloudMetrics jelas pemenangnya karena kombinasi kekuatan, kemudahan penggunaan, dan keamanan enterprise.",
     author: "Emily Watson",
     role: "Head of Data",
     company: "Retail Giant Co",
@@ -29,7 +29,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    content: "The ROI was immediate. Within the first month, we identified $2M in optimization opportunities using CloudMetrics' AI recommendations.",
+    content: "ROI langsung terasa. Dalam bulan pertama, kami mengidentifikasi peluang optimasi senilai $2M menggunakan rekomendasi AI CloudMetrics.",
     author: "James Park",
     role: "CEO",
     company: "GrowthMaster",
@@ -37,7 +37,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    content: "Support is incredible. When we needed a custom integration, they helped us implement it in days, not weeks. True partners in our success.",
+    content: "Support-nya luar biasa. Saat kami butuh integrasi kustom, mereka membantu implementasi dalam hitungan hari, bukan minggu. Partner sejati kesuksesan kami.",
     author: "Lisa Thompson",
     role: "Director of Analytics",
     company: "MedTech Solutions",
@@ -45,7 +45,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    content: "CloudMetrics handles our 10B+ daily events without breaking a sweat. The performance and reliability are unmatched in the industry.",
+    content: "CloudMetrics menangani 10 miliar+ event harian kami tanpa masalah. Performa dan reliabilitasnya tak tertandingi di industri.",
     author: "David Kim",
     role: "VP Engineering",
     company: "ScaleUp Labs",
@@ -66,13 +66,13 @@ export function Testimonials() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Testimonials</span>
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Testimoni</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-slate-900">
-            Loved by data teams{" "}
-            <span className="gradient-text">everywhere</span>
+            Dicintai tim data{" "}
+            <span className="gradient-text">di mana saja</span>
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            See why thousands of companies trust CloudMetrics to power their analytics.
+            Lihat mengapa ribuan perusahaan mempercayai CloudMetrics untuk analitik mereka.
           </p>
         </motion.div>
 
@@ -137,7 +137,7 @@ export function Testimonials() {
                 </div>
               ))}
             </div>
-            <span className="text-sm text-slate-600 ml-2">4.9/5 from 500+ reviews</span>
+            <span className="text-sm text-slate-600 ml-2">4.9/5 dari 500+ ulasan</span>
           </div>
           <div className="flex items-center gap-4">
             <div className="text-sm text-slate-600">

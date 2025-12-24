@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const integrations = [
-  { name: "Stripe", category: "Payments" },
+  { name: "Stripe", category: "Pembayaran" },
   { name: "Shopify", category: "E-commerce" },
   { name: "Salesforce", category: "CRM" },
   { name: "HubSpot", category: "Marketing" },
@@ -14,13 +14,13 @@ const integrations = [
   { name: "MongoDB", category: "Database" },
   { name: "Snowflake", category: "Data Warehouse" },
   { name: "BigQuery", category: "Data Warehouse" },
-  { name: "Slack", category: "Communication" },
+  { name: "Slack", category: "Komunikasi" },
   { name: "Zendesk", category: "Support" },
   { name: "Intercom", category: "Support" },
-  { name: "Mixpanel", category: "Analytics" },
+  { name: "Mixpanel", category: "Analitik" },
   { name: "Segment", category: "CDP" },
   { name: "AWS", category: "Cloud" },
-  { name: "Google Analytics", category: "Analytics" },
+  { name: "Google Analytics", category: "Analitik" },
   { name: "GitHub", category: "Developer" },
 ];
 
@@ -36,13 +36,13 @@ export function Integrations() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Integrations</span>
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Integrasi</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-slate-900">
-            Connect your{" "}
-            <span className="gradient-text">entire stack</span>
+            Hubungkan seluruh{" "}
+            <span className="gradient-text">tech stack Anda</span>
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            CloudMetrics integrates with 100+ tools you already use. Set up in clicks, not code.
+            CloudMetrics terintegrasi dengan 100+ tools yang sudah Anda gunakan. Setup dalam klik, bukan kode.
           </p>
         </motion.div>
 
@@ -84,7 +84,7 @@ export function Integrations() {
         >
           <Link href="/features/integrations">
             <Button variant="outline" size="lg">
-              View All 100+ Integrations
+              Lihat 100+ Integrasi
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>

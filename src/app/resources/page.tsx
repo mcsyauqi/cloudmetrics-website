@@ -17,55 +17,55 @@ import {
 } from "lucide-react";
 
 const featuredPost = {
-  title: "The Complete Guide to Building a Data-Driven Culture",
-  excerpt: "Learn how leading companies transform their organizations through data literacy, governance, and modern analytics practices.",
-  category: "Guide",
-  readTime: "15 min read",
+  title: "Panduan Lengkap Membangun Budaya Berbasis Data",
+  excerpt: "Pelajari bagaimana perusahaan terkemuka mentransformasi organisasi mereka melalui literasi data, tata kelola, dan praktik analitik modern.",
+  category: "Panduan",
+  readTime: "15 menit baca",
   href: "/resources/data-driven-culture",
   image: "gradient",
 };
 
 const blogPosts = [
   {
-    title: "10 Dashboard Design Best Practices for 2024",
-    excerpt: "Create dashboards that drive action with these proven design principles.",
+    title: "10 Best Practice Desain Dashboard untuk 2024",
+    excerpt: "Buat dashboard yang mendorong aksi dengan prinsip desain yang terbukti.",
     category: "Best Practices",
-    readTime: "8 min read",
+    readTime: "8 menit baca",
     href: "/resources/dashboard-design-best-practices",
   },
   {
-    title: "How to Calculate and Improve Your Analytics ROI",
-    excerpt: "A practical framework for measuring the business impact of your analytics investments.",
-    category: "Strategy",
-    readTime: "6 min read",
+    title: "Cara Menghitung dan Meningkatkan ROI Analitik",
+    excerpt: "Kerangka praktis untuk mengukur dampak bisnis dari investasi analitik Anda.",
+    category: "Strategi",
+    readTime: "6 menit baca",
     href: "/resources/analytics-roi",
   },
   {
-    title: "AI in Analytics: Beyond the Hype",
-    excerpt: "Separating real value from marketing buzzwords in AI-powered analytics.",
+    title: "AI dalam Analitik: Melampaui Hype",
+    excerpt: "Memisahkan nilai nyata dari buzzword marketing dalam analitik berbasis AI.",
     category: "AI & ML",
-    readTime: "10 min read",
+    readTime: "10 menit baca",
     href: "/resources/ai-analytics-beyond-hype",
   },
   {
-    title: "Real-time vs Batch Processing: When to Use Each",
-    excerpt: "A technical guide to choosing the right data processing approach.",
-    category: "Technical",
-    readTime: "12 min read",
+    title: "Real-time vs Batch Processing: Kapan Menggunakan Masing-masing",
+    excerpt: "Panduan teknis untuk memilih pendekatan pemrosesan data yang tepat.",
+    category: "Teknis",
+    readTime: "12 menit baca",
     href: "/resources/realtime-vs-batch",
   },
   {
-    title: "Building Executive Dashboards That Get Used",
-    excerpt: "How to create dashboards that busy executives actually look at.",
+    title: "Membangun Dashboard Eksekutif yang Benar-benar Digunakan",
+    excerpt: "Cara membuat dashboard yang benar-benar dilihat oleh eksekutif sibuk.",
     category: "Best Practices",
-    readTime: "7 min read",
+    readTime: "7 menit baca",
     href: "/resources/executive-dashboards",
   },
   {
-    title: "Data Privacy Compliance: GDPR, CCPA, and Beyond",
-    excerpt: "Navigate the complex landscape of data privacy regulations.",
-    category: "Compliance",
-    readTime: "9 min read",
+    title: "Kepatuhan Privasi Data: GDPR, CCPA, dan Lainnya",
+    excerpt: "Navigasi lanskap kompleks regulasi privasi data.",
+    category: "Kepatuhan",
+    readTime: "9 menit baca",
     href: "/resources/data-privacy-compliance",
   },
 ];
@@ -74,33 +74,33 @@ const resources = [
   {
     type: "Webinar",
     icon: Video,
-    title: "Live Demo: What's New in CloudMetrics 2024",
-    description: "Join us for a walkthrough of our latest features.",
-    date: "Jan 15, 2024",
+    title: "Demo Langsung: Yang Baru di CloudMetrics 2024",
+    description: "Bergabunglah untuk walkthrough fitur terbaru kami.",
+    date: "15 Jan 2024",
     href: "/resources/webinars/whats-new-2024",
     color: "from-violet-500 to-violet-600",
   },
   {
     type: "Ebook",
     icon: Download,
-    title: "The Analytics Buyer's Guide",
-    description: "Everything you need to know before choosing an analytics platform.",
-    date: "Free Download",
+    title: "Panduan Pembelian Analitik",
+    description: "Semua yang perlu Anda ketahui sebelum memilih platform analitik.",
+    date: "Download Gratis",
     href: "/resources/ebooks/analytics-buyers-guide",
     color: "from-blue-500 to-blue-600",
   },
   {
     type: "Template",
     icon: FileText,
-    title: "KPI Dashboard Templates",
-    description: "Pre-built templates for common business metrics.",
-    date: "10 Templates",
+    title: "Template Dashboard KPI",
+    description: "Template siap pakai untuk metrik bisnis umum.",
+    date: "10 Template",
     href: "/resources/templates/kpi-dashboards",
     color: "from-emerald-500 to-emerald-600",
   },
 ];
 
-const categories = ["All", "Best Practices", "Strategy", "Technical", "AI & ML", "Compliance"];
+const categories = ["Semua", "Best Practices", "Strategi", "Teknis", "AI & ML", "Kepatuhan"];
 
 export default function ResourcesPage() {
   return (
@@ -116,14 +116,14 @@ export default function ResourcesPage() {
           >
             <Badge variant="secondary" className="mb-6">
               <BookOpen className="mr-1 h-3 w-3" />
-              Resources
+              Sumber Daya
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900">
-              Learn from the{" "}
-              <span className="gradient-text">best in analytics</span>
+              Belajar dari yang{" "}
+              <span className="gradient-text">terbaik dalam analitik</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-slate-600">
-              Guides, tutorials, webinars, and insights to help you get the most from your data.
+              Panduan, tutorial, webinar, dan insight untuk membantu Anda memaksimalkan data.
             </p>
           </motion.div>
         </div>
@@ -162,7 +162,7 @@ export default function ResourcesPage() {
                         {featuredPost.excerpt}
                       </p>
                       <div className="flex items-center text-primary font-medium">
-                        Read the guide
+                        Baca panduan
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
@@ -226,7 +226,7 @@ export default function ResourcesPage() {
             transition={{ duration: 0.5 }}
             className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900">Latest articles</h2>
+            <h2 className="text-2xl font-bold text-slate-900">Artikel terbaru</h2>
             <div className="flex flex-wrap gap-2">
               {categories.map((category) => (
                 <button
@@ -282,7 +282,7 @@ export default function ResourcesPage() {
             className="mt-12 text-center"
           >
             <Button variant="outline" size="lg">
-              View All Articles
+              Lihat Semua Artikel
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </motion.div>
@@ -300,23 +300,23 @@ export default function ResourcesPage() {
             className="text-center max-w-2xl mx-auto"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Stay ahead of the curve
+              Tetap selangkah lebih maju
             </h2>
             <p className="text-lg text-slate-300 mb-8">
-              Get weekly insights on analytics, data strategy, and industry trends delivered to your inbox.
+              Dapatkan insight mingguan tentang analitik, strategi data, dan tren industri langsung ke inbox Anda.
             </p>
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Masukkan email Anda"
                 className="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary"
               />
               <Button className="bg-white text-slate-900 hover:bg-slate-100">
-                Subscribe
+                Berlangganan
               </Button>
             </form>
             <p className="mt-4 text-sm text-slate-400">
-              Join 10,000+ data professionals. Unsubscribe anytime.
+              Bergabung dengan 10.000+ profesional data. Berhenti langganan kapan saja.
             </p>
           </motion.div>
         </div>
